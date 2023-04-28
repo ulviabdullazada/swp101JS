@@ -27,15 +27,29 @@
 
 // console.log(document.querySelectorAll(".test")[1]);
 
+
+// let sp1 = document.querySelector(".sp1");
+// let sp2 = document.querySelector(".sp2");
+
+// sp1.innerHTML = "<b>salam</b>"
+// sp2.innerText = "<b>salam</b>"
+
 const inp = document.querySelector("input");
 const ls = document.getElementById("list");
+
 let students = [];
 function addArr(){
     if(inp.value.trim() != "" )
     {
-        students.push(inp.value.trim());
-        inp.value = "";
-        fillList();
+        if(students.includes(inp.value.trim().toLowerCase()) === false){
+            students.push(inp.value.trim().toLowerCase());
+            console.log(inp.value);
+            inp.value = "";
+            fillList();
+        }
+        else{
+            alert("Bu adda istifadeci var")
+        }
     }
     else{
         alert("Nese daxil et")
