@@ -19,7 +19,7 @@
 // console.log(stds.filter(val => val.toLowerCase().includes("eli")));
 // let res = nums.filter(val => val % 3 == 0);
 
-// // console.log(nums.reduce((total, value)=>total+value));
+// console.log(nums.reduce((total, value)=>total+value));
 
 // console.log(nums.filter(val => val % 3 == 0).map(val=>val / 3))
 // console.log(res.map(val=>val / 3))
