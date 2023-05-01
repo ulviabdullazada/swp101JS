@@ -1,0 +1,26 @@
+/* .light p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+}
+.dark p{
+    color: #fff !important;
+}
+.dark{
+    background-color: #000;
+} */
+.window{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(6, 6, 15, 0.41);
+    position: fixed;
+    top:0;
+}
+.justify-content-end{
+    gap: 10px
+}
+.custom-container{
+    width: 60%;
+    margin: 0 20%;
+}
+/* {
+    background-color: #000 !important;
+} */
