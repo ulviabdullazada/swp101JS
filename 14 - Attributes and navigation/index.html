@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Material icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Material css library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Burda yazanda isleyir !!! -->
+    <style>
+        .collection-item .material-icons{
+            font-size: 20px;
+            float: right;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <p>Salam</p>
+    <a href="https://www.pokemon.com/us/pokedex/pikachu">Go to page</a> -->
+    <!-- <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Leman</td>
+                <td class="td-1" asd="0">Delete</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Zehra</td>
+                <td row-index="1">Delete</td>
+            </tr>
+        </tbody>
+    </table> -->
+    <!-- <div class="container">
+        <div class="row my-5" style="align-items: center!important;display: flex;justify-content:space-between;">
+            <div class="input-field col s8" style="margin-left: 0!important;">
+                <input id="todo" type="text" class="validate">
+                <label for="todo">What do u want to do?</label>
+            </div>
+            <button id="create-btn" class="waves-effect waves-light indigo accent-4 btn">button</button>
+        </div>
+        <ul class="collection">
+            
+        </ul>
+    </div> -->
+    <div class="container" style="text-align: center;">
+        <img style="width: 30%;margin: auto; display: inline-block;" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png" alt="">
+        <div class="row">
+            <!-- changeImg(this) uygun funksiyaya kliklenen elementi gonderir -->
+            <img style="width: 20%; cursor:pointer;" onclick="changeImg(this)" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png" alt="" class="col s4">
+            <img style="width: 20%; cursor:pointer;" onclick="changeImg(this)" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/020.png" alt="" class="col s4">
+            <img style="width: 20%; cursor:pointer;" onclick="changeImg(this)" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/045.png" alt="" class="col s4">
+            <img style="width: 20%; cursor:pointer;" onclick="changeImg(this)" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/017.png" alt="" class="col s4">
+            <img style="width: 20%; cursor:pointer;" onclick="changeImg(this)" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/078.png" alt="" class="col s4">
+        </div>
+    </div>
+    <button class="waves-effect waves-light indigo accent-4 btn" onclick="previousImg()">previous</button>
+    <button class="waves-effect waves-light indigo accent-4 btn" onclick="nextImg()">next</button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
