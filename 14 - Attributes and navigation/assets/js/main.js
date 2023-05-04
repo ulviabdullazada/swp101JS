@@ -42,6 +42,11 @@ function nextImg(){
             activeImg = item;
             break;
         }
+        // eger mainImg'in src deyeri sonuncu image'in src deyerine beraberdirse,
+        // deyish birinci image'in src deyerine beraber et
+        if(mainImg.src == row.lastElementChild.src){
+            mainImg.src = row.firstElementChild.src;
+        }
     }
     changeImg(activeImg.nextElementSibling)
 }
@@ -51,10 +56,17 @@ function previousImg(){
     const mainImg = row.previousElementSibling;
     let activeImg;
     for (const item of row.children) {
+       
         if (item.src == mainImg.src) {
             activeImg = item;
+            // eger mainImg'in src deyeri birinci image'in src deyerine beraberdirse,
+            // deyish sonuncu image'in src deyerine beraber et
+            if(mainImg.src == row.firstElementChild.src){
+                mainImg.src = row.lastElementChild.src;
+            }
             break;
         }
+    
     }
     changeImg(activeImg.previousElementSibling)
 }
