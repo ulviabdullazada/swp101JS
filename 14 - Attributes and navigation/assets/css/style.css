@@ -1,0 +1,15 @@
+input:focus{
+    outline: none;
+    border: 1px solid rebeccapurple;
+}
+
+.box{
+    width: 500px;
+    box-shadow: #cdcdcd -6px 12px 20px 7px;
+}
+
+@media (max-width:447px) {
+    .box{
+        width: 200px;
+    }
+}
