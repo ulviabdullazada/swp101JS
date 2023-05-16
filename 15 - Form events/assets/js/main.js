@@ -4,16 +4,15 @@ const button = document.querySelector('button');
 // input.addEventListener("keyup",()=>{
 //     console.log("key up " + input.value);
 // })
-// input.addEventListener("keydown",(e)=>{
-//     if (!(e.keyCode > 47 && e.keyCode < 58)) {
-//         e.preventDefault();
-//     }
-// })
+input.addEventListener("keydown",(e)=>{
+    if (!(e.keyCode > 47 && e.keyCode < 58)) {
+        e.preventDefault();
+    }
+})
+
 // input.addEventListener("keypress",()=>{
 //     console.log("key press " + input.value);
 // })
-
-
 
 // input.onclick = ()=>{
 //     alert("Salam")
