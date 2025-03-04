@@ -1,7 +1,7 @@
 // var a = 22;
 // alert(a);
 // a = 77;
-// alert(a);
+// alert(a)
 
 // 1. PascalCase
 // IsMarried
